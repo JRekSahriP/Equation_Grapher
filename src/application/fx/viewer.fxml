@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.Controller">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="400.0">
+         <children>
+            <Canvas fx:id="canvas" height="350.0" layoutX="25.0" layoutY="25.0" width="350.0" />
+            <Label layoutX="162.0" layoutY="384.0" text="ax²+bx+c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="73.0" layoutY="411.0" spacing="10.0">
+               <children>
+                  <Label text="a:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ValueA" prefHeight="25.0" prefWidth="50.0" />
+                  <Label text="b:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ValueB" prefHeight="25.0" prefWidth="50.0" />
+                  <Label text="c:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ValueC" prefHeight="25.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+            <Button layoutX="172.0" layoutY="461.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
